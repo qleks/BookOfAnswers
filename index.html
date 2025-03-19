@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고민 해결책</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: #f4f4f4;
+      }
+      #answer-box {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px auto;
+        padding: 20px;
+        width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 50px;
+      }
+      button {
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>고민 해결책</h1>
+    <div id="answer-box">버튼을 눌러보세요!</div>
+    <button onclick="getAnswer()">답변 받기</button>
+
+    <script>
+      const answers = [
+        "기다려 보세요.",
+        "지금이 적기입니다.",
+        "다른 방법을 찾아보세요.",
+        "모험을 감수하세요.",
+        "변화를 두려워하지 마세요.",
+        "곧 좋은 일이 생길 겁니다.",
+        "한 번 더 생각해 보세요.",
+        "기회가 찾아오고 있습니다.",
+        "지금은 가만히 있는 것이 좋습니다.",
+        "마음을 열어보세요.",
+        "포기하지 마세요.",
+        "예상치 못한 기회가 찾아올 것입니다.",
+        "과거에 얽매이지 마세요.",
+        "당신의 직감을 믿으세요.",
+        "다른 사람의 조언을 들어보세요.",
+        "현재에 집중하세요.",
+        "변화는 곧 새로운 시작을 의미합니다.",
+        "의심하지 마세요.",
+        "계획을 세우고 행동하세요.",
+        "새로운 시도를 해보세요.",
+        "때로는 쉬어가는 것도 필요합니다.",
+        "더 깊이 생각해보세요.",
+        "무엇이든 가능하다는 걸 잊지 마세요.",
+        "문제의 본질을 바라보세요.",
+        "당신의 결정을 믿으세요.",
+        "지금이 기회입니다. 놓치지 마세요.",
+        "기다리는 것도 전략입니다.",
+        "시간이 해결해 줄 것입니다.",
+        "새로운 가능성을 탐색하세요.",
+        "한 번 더 도전해보세요.",
+        "지금은 침착할 때입니다.",
+        "무리하지 마세요.",
+        "좋은 소식이 찾아올 것입니다.",
+        "의미 있는 변화가 필요합니다.",
+        "마음의 소리를 따라가세요.",
+        "누군가가 당신을 도울 것입니다.",
+        "어려운 순간이 지나가면 더 나아질 것입니다.",
+        "당신은 이미 답을 알고 있습니다.",
+        "다른 길을 고민해보세요.",
+        "지금 당장 결정하지 않아도 됩니다.",
+        "용기가 필요한 순간입니다.",
+        "다시 한 번 생각해보고 결정하세요.",
+        "다른 관점에서 바라보세요.",
+        "예상치 못한 곳에서 답이 나올 것입니다.",
+        "이제는 행동할 때입니다.",
+        "믿음을 가지세요.",
+        "새로운 도전을 준비하세요.",
+        "자신감을 가지세요.",
+        "너무 걱정하지 마세요.",
+        "모든 것은 당신에게 달려 있습니다.",
+      ];
+
+      function getAnswer() {
+        const randomIndex = Math.floor(Math.random() * answers.length);
+        document.getElementById("answer-box").innerText = answers[randomIndex];
+      }
+    </script>
+  </body>
+</html>
